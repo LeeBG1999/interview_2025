@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  fastapi:
+    build: .
+    ports:
+      - "10000:10000"
+    # volumes:
+    #   - ./src:/app
+    # environment:
+    #   - ENV_FILE=.env
+
+networks:
+  default:
+    driver: bridge
