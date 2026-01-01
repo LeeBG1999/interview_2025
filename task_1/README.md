@@ -16,7 +16,7 @@ The application is containerized using Docker, allowing for easy deployment and 
    ```
 
 2. **Access the Application**  
-   Once the application is running, you can access it at `http://localhost:10000`. You can use tools like Postman or curl to send POST requests with CSV files to the `/upload` endpoint.
+   Once the application is running, you can access it at `http://localhost:10000`. You can use tools like Postman or curl to send POST requests with CSV files to the `/upload` endpoint. Or you can access it at `http://localhost:10000/docs` (which is the debugging, friendly web UI from fastAPI, where you can test all the existing API in the project), then click on `/upload` bar, then click `try it out` button, and choose the file you want to upload, click `checkout`. Scroll down and you will see the API response.
 
 3. **Stop the Application**  
    To stop the application, press `CTRL+C` in the terminal where Docker Compose is running, or run:  
